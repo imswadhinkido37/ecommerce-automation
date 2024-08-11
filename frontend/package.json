@@ -1,0 +1,15 @@
+{
+    "name": "ecommerce-automation",
+    "version": "1.0.0",
+    "description": "The task involves creating a comprehensive frontend automation framework using Playwright to test e-commerce websites such as Amazon.in and Flipkart.in. The goal is to automate key user interactions on these platforms to ensure that the product search, cart management, and checkout processes function correctly.",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx playwright test"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@playwright/test": "^1.46.0"
+    }
+}

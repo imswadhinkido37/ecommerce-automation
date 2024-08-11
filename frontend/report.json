@@ -1,0 +1,101 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Avi00\\Desktop\\QA\\Swadhin-QA-Automation-Engineer-Assignment\\ecommerce-automation\\frontend\\playwright.config.js",
+    "rootDir": "C:/Users/Avi00/Desktop/QA/Swadhin-QA-Automation-Engineer-Assignment/ecommerce-automation/frontend",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "test-results",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFolder": "test-results",
+          "outputFile": "report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/Avi00/Desktop/QA/Swadhin-QA-Automation-Engineer-Assignment/ecommerce-automation/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Avi00/Desktop/QA/Swadhin-QA-Automation-Engineer-Assignment/ecommerce-automation/frontend",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/Avi00/Desktop/QA/Swadhin-QA-Automation-Engineer-Assignment/ecommerce-automation/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Avi00/Desktop/QA/Swadhin-QA-Automation-Engineer-Assignment/ecommerce-automation/frontend",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/Avi00/Desktop/QA/Swadhin-QA-Automation-Engineer-Assignment/ecommerce-automation/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "google chrome",
+        "name": "google chrome",
+        "testDir": "C:/Users/Avi00/Desktop/QA/Swadhin-QA-Automation-Engineer-Assignment/ecommerce-automation/frontend",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.46.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+    }
+  ],
+  "stats": {
+    "startTime": "2024-08-11T18:36:31.598Z",
+    "duration": 84.173,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
