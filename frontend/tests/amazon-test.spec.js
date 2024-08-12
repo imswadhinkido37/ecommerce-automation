@@ -57,3 +57,6 @@ test('test', async ({ page, context }) => {
     contentType: 'image/png',
   });
 });
+
+
+ i want to remove the default timwout completely 

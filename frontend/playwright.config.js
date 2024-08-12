@@ -6,7 +6,7 @@ module.exports = defineConfig({
     ['html', { outputFolder: 'Report-HTML', open: 'always' }] // Custom folder for the report
   ],
   use: {
-    timeout: 60000,
+    timeout: 0,
     headless: false,
   },
 });
