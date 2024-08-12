@@ -1,0 +1,18 @@
+{
+  "name": "ecommerce-backend-tests",
+  "version": "1.0.0",
+  "description": "Backend automation tests for e-commerce websites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
