@@ -32,10 +32,19 @@ jobs:
       with:
         # JMeter test plan to execute
         test-plan-path: './Amazon.jmx'
-
+        
     - name: Upload Results
       uses: actions/upload-artifact@v3
       with:
         name: jmeter-results
         path: result.jtl
         if-no-files-found: error
+
+        test-plan-path: './Flipkart.jmx'
+    - name: Upload Results
+      uses: actions/upload-artifact@v3
+      with:
+        name: jmeter-results
+        path: result.jtl
+        if-no-files-found: error
+
