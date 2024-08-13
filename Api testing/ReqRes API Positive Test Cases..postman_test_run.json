@@ -1,0 +1,539 @@
+{
+	"id": "198d30e9-e173-4efb-906d-181ec160308c",
+	"name": "ReqRes API Positive Test Cases.",
+	"timestamp": "2024-08-13T11:06:50.583Z",
+	"collection_id": "37620276-5f1d1efd-3395-40c2-83c9-64d879a276b9",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 29,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-08-13T11:06:44.825Z",
+	"totalFail": 4,
+	"results": [
+		{
+			"id": "ae064330-b5fd-4ac4-a98e-1bb0836d48d9",
+			"name": "Retrieve a Single User by Valid ID",
+			"url": "https://reqres.in/api/users",
+			"time": 91,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains user details with ID 2": true,
+				"User data includes first_name and last_name fields": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains user details with ID 2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User data includes first_name and last_name fields": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				91
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains user details with ID 2": true,
+					"User data includes first_name and last_name fields": true
+				}
+			]
+		},
+		{
+			"id": "0fc2d97c-99e7-45ec-a693-490273fb2d26",
+			"name": "Retrieve a List of Users",
+			"url": "https://reqres.in/api/users?page=2",
+			"time": 83,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": false,
+				"Response is JSON": false,
+				"Response contains user data": false,
+				"Response has page field with value 2": true,
+				"Response contains a list of users": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response is JSON": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response contains user data": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has page field with value 2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains a list of users": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				83
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": false,
+					"Response is JSON": false,
+					"Response contains user data": false,
+					"Response has page field with value 2": true,
+					"Response contains a list of users": true
+				}
+			]
+		},
+		{
+			"id": "808fe037-0ac5-4193-9eb7-eecef54f25da",
+			"name": "Create a New User",
+			"url": "https://reqres.in/api/users",
+			"time": 409,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response body contains created user's name and job": true,
+				"Response contains an ID and createdAt timestamp": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains created user's name and job": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains an ID and createdAt timestamp": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				409
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response body contains created user's name and job": true,
+					"Response contains an ID and createdAt timestamp": true
+				}
+			]
+		},
+		{
+			"id": "9d3987d9-69ef-4d3a-ba17-bf4bc50100d7",
+			"name": "Update an Existing User",
+			"url": "https://reqres.in/api/users/2",
+			"time": 422,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response body contains updated user's name and job": true,
+				"Response contains an updatedAt timestamp": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains updated user's name and job": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains an updatedAt timestamp": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				422
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response body contains updated user's name and job": true,
+					"Response contains an updatedAt timestamp": true
+				}
+			]
+		},
+		{
+			"id": "e62e354c-c781-4cdf-8d10-e9ffe4de89d7",
+			"name": "Delete an Existing User",
+			"url": "https://reqres.in/api/users/2",
+			"time": 407,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Response has no content": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has no content": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				407
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Response has no content": true
+				}
+			]
+		},
+		{
+			"id": "86d4a036-fc96-4a11-8557-cfabd9228c80",
+			"name": "Retrieve a User with Invalid ID",
+			"url": "https://reqres.in/api/users/999",
+			"time": 460,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response body is empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				460
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response body is empty": true
+				}
+			]
+		},
+		{
+			"id": "b44f9f82-88af-49d7-8f93-4e340e96e904",
+			"name": "Create a User with Invalid JSON",
+			"url": "https://reqres.in/api/users",
+			"time": 408,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response body contains 'Bad Request'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains 'Bad Request'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				408
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response body contains 'Bad Request'": true
+				}
+			]
+		},
+		{
+			"id": "0d2b369b-c6fe-4c88-95b1-9ce69c5dff28",
+			"name": "Update a User with Invalid ID",
+			"url": "https://reqres.in/api/users/999",
+			"time": 618,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response body contains the updated data": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains the updated data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				618
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response body contains the updated data": true
+				}
+			]
+		},
+		{
+			"id": "ac3a2619-f117-4c72-9bc8-68dd342dbcee",
+			"name": "Delete a User with Invalid ID",
+			"url": "https://reqres.in/api/users/999",
+			"time": 599,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Response body is empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				599
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Response body is empty": true
+				}
+			]
+		},
+		{
+			"id": "2aa3744b-8b45-4f54-999a-5a3197b9e29c",
+			"name": "Retrieve Users with an Empty Page Number",
+			"url": "https://reqres.in/api/unknown",
+			"time": 84,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response body defaults to the first page of users": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body defaults to the first page of users": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				84
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response body defaults to the first page of users": true
+				}
+			]
+		},
+		{
+			"id": "9ecc6064-7ea2-4404-950f-2daf58bb4eb5",
+			"name": "Create a User with a Long Name",
+			"url": "https://reqres.in/api/unknown",
+			"time": 431,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response body contains the created user's name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains the created user's name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				431
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response body contains the created user's name": true
+				}
+			]
+		},
+		{
+			"id": "a77e3bd4-32e4-4c31-95cd-0fdd41b8c06a",
+			"name": "Update a User with a Very Large Payload",
+			"url": "https://reqres.in/api/users/2",
+			"time": 411,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response body handles large payload gracefully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body handles large payload gracefully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				411
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response body handles large payload gracefully": true
+				}
+			]
+		},
+		{
+			"id": "1930f447-a4e0-4f72-83e7-8fe441cb02e2",
+			"name": "Delete Without Specifying an ID",
+			"url": "https://reqres.in/api/users/2",
+			"time": 406,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204 or 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204 or 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				406
+			],
+			"allTests": [
+				{
+					"Status code is 204 or 400": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4829,
+	"collection": {
+		"requests": [
+			{
+				"id": "ae064330-b5fd-4ac4-a98e-1bb0836d48d9",
+				"method": "GET"
+			},
+			{
+				"id": "0fc2d97c-99e7-45ec-a693-490273fb2d26",
+				"method": "GET"
+			},
+			{
+				"id": "808fe037-0ac5-4193-9eb7-eecef54f25da",
+				"method": "POST"
+			},
+			{
+				"id": "9d3987d9-69ef-4d3a-ba17-bf4bc50100d7",
+				"method": "PUT"
+			},
+			{
+				"id": "e62e354c-c781-4cdf-8d10-e9ffe4de89d7",
+				"method": "DELETE"
+			},
+			{
+				"id": "86d4a036-fc96-4a11-8557-cfabd9228c80",
+				"method": "GET"
+			},
+			{
+				"id": "b44f9f82-88af-49d7-8f93-4e340e96e904",
+				"method": "POST"
+			},
+			{
+				"id": "0d2b369b-c6fe-4c88-95b1-9ce69c5dff28",
+				"method": "PUT"
+			},
+			{
+				"id": "ac3a2619-f117-4c72-9bc8-68dd342dbcee",
+				"method": "DELETE"
+			},
+			{
+				"id": "2aa3744b-8b45-4f54-999a-5a3197b9e29c",
+				"method": "GET"
+			},
+			{
+				"id": "9ecc6064-7ea2-4404-950f-2daf58bb4eb5",
+				"method": "POST"
+			},
+			{
+				"id": "a77e3bd4-32e4-4c31-95cd-0fdd41b8c06a",
+				"method": "PUT"
+			},
+			{
+				"id": "1930f447-a4e0-4f72-83e7-8fe441cb02e2",
+				"method": "DELETE"
+			}
+		]
+	}
+}
